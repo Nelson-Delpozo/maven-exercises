@@ -1,5 +1,6 @@
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 import static org.apache.commons.lang3.StringUtils.capitalize;
@@ -25,6 +26,14 @@ public class MavenApp {
         boolean isAlpha = StringUtils.isAlphaSpace(test);
         System.out.println("isAlpha = " + isAlpha);
 
+        String rotate = StringUtils.rotate(test, 5);
+        System.out.println("rotate = " + rotate);
+
+        String[] split = StringUtils.split(test);
+        System.out.println("split = " + Arrays.toString(split));
+
+        String join = StringUtils.join(split, ' ');
+        System.out.println("join = " + join);
     }
 
 
